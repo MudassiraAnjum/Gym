@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lato:wght@300&family=Libre+Baskerville&family=Mr+Dafoe&family=Nunito:wght@300&family=Roboto:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Lato', sans-serif;
+        margin: 0%;
+        padding: 0%;
+        background: url('img/img1.jpg');
+        background-size: 1280px 1000px;
+        background-repeat: no-repeat;
+        color: black;
+    }
+    .header{
+        background-color: white;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+    }
+
+    .left img {
+        height: 54px;
+        width: 106px;
+        filter: invert();
+    }
+
+    .name {
+        position: absolute;
+        left: 146px;
+        top: 15px;
+        font-family: 'Mr Dafoe', cursive;
+        font-size: 20px;
+    }
+    
+    .mid {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+        top: 15px;
+    }
+    
+    .btn {
+        margin: 0% 10px;
+        background-color: black;
+        color: white;
+        padding: 4px 10px;
+        border: 2px solid gray;
+        border-radius: 8px;
+        font-size: 13px;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .btn:hover {
+        background-color: rgb(76, 75, 75);
+    }
+    
+    .navbar {
+        display: inline-block;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+    
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 25px 20px;
+    }
+    
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: gray;
+    }
+    .navbar li a.active{
+        color: gray;
+        text-decoration: underline;
+    }
+    
+    .container {
+        margin: 40px 366px;
+        padding: 40px 40px;
+        width: 33%;
+        border-radius: 15px;
+    }
+    .container h1{
+        color: white;
+        text-align: center;
+        margin: 20px 2px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        border-radius: 4px;
+        font-family: 'Lato', sans-serif;
+        margin: 7px auto;
+        font-size: 15px;
+        width: 350px;
+        padding: 7px 5px;
+        border: 2px solid black;
+    }
+    .container button{
+        display: block;
+        width: 88%; 
+        margin: 20px auto;
+        padding: 10px 2px;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/images.png" alt="Not Found">
+        </div>
+        <div class="name">
+            Fitness Club
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">
+                Call Us Now
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Us Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
